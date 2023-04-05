@@ -161,19 +161,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\devle\\.nuget\\packages\\": {}
+    "C:\\Users\\lacam\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Du an ca nhan\\ElectronicShop\\ElectronicShop_Model\\ElectronicShop_Model.csproj",
+      "projectUniqueName": "D:\\hocnek\\ElectronicShop\\ElectronicShop_Model\\ElectronicShop_Model.csproj",
       "projectName": "ElectronicShop_Model",
-      "projectPath": "D:\\Du an ca nhan\\ElectronicShop\\ElectronicShop_Model\\ElectronicShop_Model.csproj",
-      "packagesPath": "C:\\Users\\devle\\.nuget\\packages\\",
-      "outputPath": "D:\\Du an ca nhan\\ElectronicShop\\ElectronicShop_Model\\obj\\",
+      "projectPath": "D:\\hocnek\\ElectronicShop\\ElectronicShop_Model\\ElectronicShop_Model.csproj",
+      "packagesPath": "C:\\Users\\lacam\\.nuget\\packages\\",
+      "outputPath": "D:\\hocnek\\ElectronicShop\\ElectronicShop_Model\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\devle\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lacam\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -187,8 +187,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Du an ca nhan\\ElectronicShop\\ElectronicShop_Utility\\ElectronicShop_Utility.csproj": {
-              "projectPath": "D:\\Du an ca nhan\\ElectronicShop\\ElectronicShop_Utility\\ElectronicShop_Utility.csproj"
+            "D:\\hocnek\\ElectronicShop\\ElectronicShop_Utility\\ElectronicShop_Utility.csproj": {
+              "projectPath": "D:\\hocnek\\ElectronicShop\\ElectronicShop_Utility\\ElectronicShop_Utility.csproj"
             }
           }
         }

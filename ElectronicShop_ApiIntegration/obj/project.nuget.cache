@@ -1,18 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "4zPIPfgDhFYOWT5YpTMJJmFi1EiWWaz1WO1P9wyslnN684qYBr4tYx6hN7yK26CRRn8SY1Meu27nVHWITGT1YA==",
+  "dgSpecHash": "wd9+g7//kXyfgBoqGKEtXqUvfw1su8vGsr5BwWX/cKX9dKHBv7jdGNn9iPll8Vr4fxJr7qWZYQ71GAwzhHgycw==",
   "success": true,
-  "projectFilePath": "D:\\Du an ca nhan\\ElectronicShop\\ElectronicShop_ApiIntegration\\ElectronicShop_ApiIntegration.csproj",
+  "projectFilePath": "D:\\hocnek\\ElectronicShop\\ElectronicShop_ApiIntegration\\ElectronicShop_ApiIntegration.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\devle\\.nuget\\packages\\fluentvalidation\\11.1.0\\fluentvalidation.11.1.0.nupkg.sha512",
-    "C:\\Users\\devle\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.1.2\\fluentvalidation.aspnetcore.11.1.2.nupkg.sha512",
-    "C:\\Users\\devle\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.1.0\\fluentvalidation.dependencyinjectionextensions.11.1.0.nupkg.sha512",
-    "C:\\Users\\devle\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\6.0.2\\microsoft.aspnetcore.jsonpatch.6.0.2.nupkg.sha512",
-    "C:\\Users\\devle\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\6.0.2\\microsoft.aspnetcore.mvc.newtonsoftjson.6.0.2.nupkg.sha512",
-    "C:\\Users\\devle\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
-    "C:\\Users\\devle\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512",
-    "C:\\Users\\devle\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
-    "C:\\Users\\devle\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512"
+    "C:\\Users\\lacam\\.nuget\\packages\\fluentvalidation\\11.1.0\\fluentvalidation.11.1.0.nupkg.sha512",
+    "C:\\Users\\lacam\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.1.2\\fluentvalidation.aspnetcore.11.1.2.nupkg.sha512",
+    "C:\\Users\\lacam\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.1.0\\fluentvalidation.dependencyinjectionextensions.11.1.0.nupkg.sha512",
+    "C:\\Users\\lacam\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\6.0.2\\microsoft.aspnetcore.jsonpatch.6.0.2.nupkg.sha512",
+    "C:\\Users\\lacam\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\6.0.2\\microsoft.aspnetcore.mvc.newtonsoftjson.6.0.2.nupkg.sha512",
+    "C:\\Users\\lacam\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\lacam\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512",
+    "C:\\Users\\lacam\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
+    "C:\\Users\\lacam\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512"
   ],
   "logs": []
 }

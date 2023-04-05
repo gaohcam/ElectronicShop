@@ -10131,19 +10131,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\devle\\.nuget\\packages\\": {}
+    "C:\\Users\\lacam\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Du an ca nhan\\ElectronicShop\\ElectronicShop_Admin\\ElectronicShop_Admin.csproj",
+      "projectUniqueName": "D:\\hocnek\\ElectronicShop\\ElectronicShop_Admin\\ElectronicShop_Admin.csproj",
       "projectName": "ElectronicShop_Admin",
-      "projectPath": "D:\\Du an ca nhan\\ElectronicShop\\ElectronicShop_Admin\\ElectronicShop_Admin.csproj",
-      "packagesPath": "C:\\Users\\devle\\.nuget\\packages\\",
-      "outputPath": "D:\\Du an ca nhan\\ElectronicShop\\ElectronicShop_Admin\\obj\\",
+      "projectPath": "D:\\hocnek\\ElectronicShop\\ElectronicShop_Admin\\ElectronicShop_Admin.csproj",
+      "packagesPath": "C:\\Users\\lacam\\.nuget\\packages\\",
+      "outputPath": "D:\\hocnek\\ElectronicShop\\ElectronicShop_Admin\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\devle\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lacam\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10157,8 +10157,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Du an ca nhan\\ElectronicShop\\ElectronicShop_ApiIntegration\\ElectronicShop_ApiIntegration.csproj": {
-              "projectPath": "D:\\Du an ca nhan\\ElectronicShop\\ElectronicShop_ApiIntegration\\ElectronicShop_ApiIntegration.csproj"
+            "D:\\hocnek\\ElectronicShop\\ElectronicShop_ApiIntegration\\ElectronicShop_ApiIntegration.csproj": {
+              "projectPath": "D:\\hocnek\\ElectronicShop\\ElectronicShop_ApiIntegration\\ElectronicShop_ApiIntegration.csproj"
             }
           }
         }

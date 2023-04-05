@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<Nullable>disable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="FluentValidation.AspNetCore" Version="11.1.2" />
+		<PackageReference Include="MailKit" Version="2.12.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.2" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.2" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\ElectronicShop_Domain\ElectronicShop_Domain.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="wwwroot\product-content\" />
+	</ItemGroup>
+
+</Project>

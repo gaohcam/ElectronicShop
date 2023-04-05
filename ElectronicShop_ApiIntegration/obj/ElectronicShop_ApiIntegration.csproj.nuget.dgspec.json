@@ -1,0 +1,200 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Du an ca nhan\\ElectronicShop\\ElectronicShop_ApiIntegration\\ElectronicShop_ApiIntegration.csproj": {}
+  },
+  "projects": {
+    "D:\\Du an ca nhan\\ElectronicShop\\ElectronicShop_ApiIntegration\\ElectronicShop_ApiIntegration.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Du an ca nhan\\ElectronicShop\\ElectronicShop_ApiIntegration\\ElectronicShop_ApiIntegration.csproj",
+        "projectName": "ElectronicShop_ApiIntegration",
+        "projectPath": "D:\\Du an ca nhan\\ElectronicShop\\ElectronicShop_ApiIntegration\\ElectronicShop_ApiIntegration.csproj",
+        "packagesPath": "C:\\Users\\devle\\.nuget\\packages\\",
+        "outputPath": "D:\\Du an ca nhan\\ElectronicShop\\ElectronicShop_ApiIntegration\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\devle\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Du an ca nhan\\ElectronicShop\\ElectronicShop_Model\\ElectronicShop_Model.csproj": {
+                "projectPath": "D:\\Du an ca nhan\\ElectronicShop\\ElectronicShop_Model\\ElectronicShop_Model.csproj"
+              },
+              "D:\\Du an ca nhan\\ElectronicShop\\ElectronicShop_Utility\\ElectronicShop_Utility.csproj": {
+                "projectPath": "D:\\Du an ca nhan\\ElectronicShop\\ElectronicShop_Utility\\ElectronicShop_Utility.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Du an ca nhan\\ElectronicShop\\ElectronicShop_Model\\ElectronicShop_Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Du an ca nhan\\ElectronicShop\\ElectronicShop_Model\\ElectronicShop_Model.csproj",
+        "projectName": "ElectronicShop_Model",
+        "projectPath": "D:\\Du an ca nhan\\ElectronicShop\\ElectronicShop_Model\\ElectronicShop_Model.csproj",
+        "packagesPath": "C:\\Users\\devle\\.nuget\\packages\\",
+        "outputPath": "D:\\Du an ca nhan\\ElectronicShop\\ElectronicShop_Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\devle\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Du an ca nhan\\ElectronicShop\\ElectronicShop_Utility\\ElectronicShop_Utility.csproj": {
+                "projectPath": "D:\\Du an ca nhan\\ElectronicShop\\ElectronicShop_Utility\\ElectronicShop_Utility.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Du an ca nhan\\ElectronicShop\\ElectronicShop_Utility\\ElectronicShop_Utility.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Du an ca nhan\\ElectronicShop\\ElectronicShop_Utility\\ElectronicShop_Utility.csproj",
+        "projectName": "ElectronicShop_Utility",
+        "projectPath": "D:\\Du an ca nhan\\ElectronicShop\\ElectronicShop_Utility\\ElectronicShop_Utility.csproj",
+        "packagesPath": "C:\\Users\\devle\\.nuget\\packages\\",
+        "outputPath": "D:\\Du an ca nhan\\ElectronicShop\\ElectronicShop_Utility\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\devle\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

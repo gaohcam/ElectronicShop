@@ -1,0 +1,81 @@
+﻿@model ElectronicShop_Model.Users.LoginRequest
+@{
+	Layout = null;
+}
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="/login/css/style.css">
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+	<title>Đăng nhập tài khoản Admin | E-Commerce</title>
+</head>
+<body class="img js-fullheigh" style="background-image: url(/login/images/bg.jpg);">
+	<div class="lds-spinner" hidden><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">E-Commerce</h2>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-6 col-lg-4">
+					<div class="login-wrap p-0">
+						<h3 class="mb-4 text-center">Admin Site</h3>
+						<form id="form" class="signin-form" asp-action="Index" asp-controller="Login">
+							<input type="hidden" asp-for="ReturnUrl" />
+							<div class="form-group">
+								<input asp-for="UserName" type="text" class="form-control" placeholder="Tài khoản" required>
+							</div>
+							<div class="form-group">
+								<input asp-for="Password" id="password" type="password" class="form-control" placeholder="Mật khẩu" required>
+								<span toggle="#password" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+							</div>
+							<div class="form-group">
+								<button type="submit" class="form-control btn btn-primary submit px-3">Đăng nhập</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="https://code.jquery.com/jquery-3.6.3.min.js"
+			integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+			crossorigin="anonymous">
+	</script>
+	<script src="/login/js/popper.min.js"></script>
+	<script src="/login/js/bootstrap.min.js"></script>
+	<script src="/login/js/main.js"></script>
+	<script type="text/javascript">
+		$('#form').on('submit', function () {
+			$('.ftco-section').css('opacity', 0.5)
+			$('.lds-spinner').removeAttr('hidden')
+		})
+	</script>
+	@if (TempData["Message"] != null)
+	{
+		<script type="text/javascript">
+			const swalWithBootstrapButtons = Swal.mixin({
+				customClass: {
+					confirmButton: 'btn btn-primary',
+				},
+				confirmButtonText: 'Đã hiểu',
+				buttonsStyling: false,
+			})
+			swalWithBootstrapButtons.fire(
+				'Có lỗi xảy ra!',
+				'@TempData["Message"]',
+				'error'
+			)
+		</script>
+	}
+</body>
+</html>

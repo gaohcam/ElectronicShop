@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Du an ca nhan\\ElectronicShop\\ElectronicShop_API\\wwwroot\\product-content\\2a548e3f-95b3-43d3-a622-920242e84691.png",
+      "PackagePath": "staticwebassets\\product-content\\2a548e3f-95b3-43d3-a622-920242e84691.png"
+    },
+    {
+      "Id": "D:\\Du an ca nhan\\ElectronicShop\\ElectronicShop_API\\wwwroot\\product-content\\9791e281-2857-4900-a9b1-ded326b8d5e4.png",
+      "PackagePath": "staticwebassets\\product-content\\9791e281-2857-4900-a9b1-ded326b8d5e4.png"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.ElectronicShop_API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.ElectronicShop_API.props",
+      "PackagePath": "build\\ElectronicShop_API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.ElectronicShop_API.props",
+      "PackagePath": "buildMultiTargeting\\ElectronicShop_API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.ElectronicShop_API.props",
+      "PackagePath": "buildTransitive\\ElectronicShop_API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,138 @@
+﻿@using ElectronicShop_Model.Products;
+@using ElectronicShop_Model.Common;
+@model PagedResult<ProductOutput>
+@inject Microsoft.Extensions.Configuration.IConfiguration _config
+@{
+	ViewData["Title"] = "Danh mục";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Scripts {
+	<script type="text/javascript">
+		$('#submit').click(function () {
+			$('form').submit();
+		});
+	</script>
+
+	@if (TempData.ContainsKey("Alert"))
+	{
+		<script type="text/javascript">
+			$(document).ready(function () {
+				Swal.fire({
+					position: 'top-end',
+					icon: 'success',
+					title: '@TempData["Alert"].ToString()',
+					showConfirmButton: false,
+					timer: 1500
+				})
+			})
+		</script>
+	}
+}
+
+<style>
+	td, th {
+		vertical-align: middle !important;
+	}
+</style>
+
+<div class="content-wrapper">
+	<!-- Content Header (Page header) -->
+	<div class="content-header">
+		<div class="container-fluid">
+			<div class="row mb-2">
+				<div class="col-sm-6">
+					<h1 class="m-0">Sản phẩm</h1>
+				</div><!-- /.col -->
+				<div class="col-sm-6">
+					<ol class="breadcrumb float-sm-right">
+						<li class="breadcrumb-item"><a href="/">Trang chủ</a></li>
+						<li class="breadcrumb-item active">Danh sách sản phẩm</li>
+					</ol>
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+		</div><!-- /.container-fluid -->
+	</div>
+	<section class="content">
+		<div class="container-fluid">
+			<div class="card mb-12">
+				<div class="card-body">
+					<div class="row d-flex">
+						<div class="p-2 flex-fill bd-highlight"><button type="button" class="btn btn-success" onclick="window.location.href='/Product/Create'">Tạo mới</button></div>
+						<div class="p-2 flex-fill bd-highlight col-6 col-sm-6 col-md-6 col-lg-6 col-xs-4">
+							<form asp-action="Index" method="get">
+								<input type="text" value="@ViewBag.Keyword" name="keyword" class="form-control" />
+							</form>
+						</div>
+						<div class="p-2 bd-highlight"><button id="submit" class="btn btn-info"><i class="fa fa-search" aria-hidden="true"></i></button></div>
+					</div>
+				</div>
+				<div class="card-body">
+					<div class="table-responsive">
+						<a>
+
+						</a>
+						<table class="table table-bordered" style="text-align: center;">
+							<thead>
+								<tr>
+									<th width="10%">
+										@Html.DisplayNameFor(model => model.Items.First().ProductId)
+									</th>
+									<th width="20%">
+										@Html.DisplayNameFor(model => model.Items.First().ProductName)
+									</th>
+									<th width="15%">
+										@Html.DisplayNameFor(model => model.Items.First().CategoryName)
+									</th>
+									<th width="10%">
+										@Html.DisplayNameFor(model => model.Items.First().Stock)
+									</th>
+									<th width="10%">
+										@Html.DisplayNameFor(model => model.Items.First().ProductPrice)
+									</th>
+									<th width="20%">
+										@Html.DisplayNameFor(model => model.Items.First().ProductSalePrice)
+									</th>
+									<th width="15%">
+										@Html.DisplayNameFor(model => model.Items.First().ProductImage)
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								@foreach (var item in Model.Items)
+								{
+									<tr>
+										<td>
+											@item.ProductId
+										</td>
+										<td>
+											@item.ProductName
+										</td>
+										<td>
+											@item.CategoryName
+										</td>
+										<td>
+											@item.Stock
+										</td>
+										<td>
+											@Html.Raw(FunctionCommon.FormatMoney(item.ProductPrice))
+										</td>
+										<td>
+											@Html.Raw(FunctionCommon.FormatMoney(item.ProductSalePrice))
+										</td>
+										<td>
+											<img src="@(_config[Constants.BASE_ADDRESS] + item.ProductImage)" height="100" width="100" />
+										</td>
+									</tr>
+								}
+							</tbody>
+						</table>
+					</div>
+					@*truyền Model PagedResult vào vì hàm InvokeAsync của class PagerViewComponent nhận 1
+					tham số object PagedResult*@
+					@await Component.InvokeAsync("Pager", Model)
+				</div>
+			</div>
+		</div>
+	</section>
+</div>

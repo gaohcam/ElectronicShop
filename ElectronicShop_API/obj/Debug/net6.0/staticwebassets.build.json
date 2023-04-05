@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "Hash": "5JDir1dzcfqaKC+yuZ3IGhlbbd6yP32H7pHh/BuHXMg=",
+  "Source": "ElectronicShop_API",
+  "BasePath": "_content/ElectronicShop_API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ElectronicShop_API\\wwwroot",
+      "Source": "ElectronicShop_API",
+      "ContentRoot": "D:\\Du an ca nhan\\ElectronicShop\\ElectronicShop_API\\wwwroot\\",
+      "BasePath": "_content/ElectronicShop_API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\Du an ca nhan\\ElectronicShop\\ElectronicShop_API\\wwwroot\\product-content\\2a548e3f-95b3-43d3-a622-920242e84691.png",
+      "SourceId": "ElectronicShop_API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Du an ca nhan\\ElectronicShop\\ElectronicShop_API\\wwwroot\\",
+      "BasePath": "_content/ElectronicShop_API",
+      "RelativePath": "product-content/2a548e3f-95b3-43d3-a622-920242e84691.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\product-content\\2a548e3f-95b3-43d3-a622-920242e84691.png"
+    },
+    {
+      "Identity": "D:\\Du an ca nhan\\ElectronicShop\\ElectronicShop_API\\wwwroot\\product-content\\9791e281-2857-4900-a9b1-ded326b8d5e4.png",
+      "SourceId": "ElectronicShop_API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Du an ca nhan\\ElectronicShop\\ElectronicShop_API\\wwwroot\\",
+      "BasePath": "_content/ElectronicShop_API",
+      "RelativePath": "product-content/9791e281-2857-4900-a9b1-ded326b8d5e4.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\product-content\\9791e281-2857-4900-a9b1-ded326b8d5e4.png"
+    }
+  ]
+}

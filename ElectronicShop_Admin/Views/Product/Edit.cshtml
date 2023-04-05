@@ -1,0 +1,151 @@
+﻿@model ElectronicShop_Model.Products.ProductInput
+@inject Microsoft.Extensions.Configuration.IConfiguration _config
+
+@{
+	ViewData["Title"] = "Chỉnh sửa thông tin sản phẩm";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+	.ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline.ck-blurred {
+		background: none;
+	}
+
+	.ck.ck-editor__main > .ck-editor__editable {
+		background: none;
+	}
+</style>
+
+<div class="content-wrapper">
+	<section class="content">
+		<div class="container-fluid">
+			<h1>Quản lý sản phẩm</h1>
+			<h4>Chỉnh sửa thôngt tin sản phẩm</h4>
+			<hr />
+			<div class="card mb-2">
+				<div class="card-body">
+					<div class="row">
+						<div class="col-md-8">
+							<form asp-action="Edit" enctype="multipart/form-data" method="post">
+								<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+								<div class="form-group">
+									<label asp-for="ProductId" class="control-label"></label>
+									<input asp-for="ProductId" class="form-control" />
+									<span asp-validation-for="ProductId" class="text-danger"></span>
+								</div>
+								<div class="form-group">
+									<label asp-for="ProductName" class="control-label"></label>
+									<input asp-for="ProductName" class="form-control" />
+									<span asp-validation-for="ProductName" class="text-danger"></span>
+								</div>
+								<div class="form-group">
+									<label asp-for="ProductIntroduction" class="control-label"></label>
+									<textarea asp-for="ProductIntroduction" id="pIEditor" class="form-control"></textarea>
+									<span asp-validation-for="ProductIntroduction" class="text-danger"></span>
+								</div>
+								<div class="form-group">
+									<label asp-for="ProductDescription" class="control-label"></label>
+									<textarea asp-for="ProductDescription" id="pDEditor" class="form-control"></textarea>
+									<span asp-validation-for="ProductDescription" class="text-danger"></span>
+								</div>
+								<div class="form-group">
+									<label asp-for="CategoryId" class="control-label"></label>
+									<select 
+										asp-for="CategoryId"
+										class="form-control">
+										<option>Chọn danh mục</option>
+										@foreach (var item in Model.Categories)
+										{
+											<option value="@item.CategoryId">@item.CategoryName</option>
+										}
+									</select>
+									<span asp-validation-for="CategoryId" class="text-danger"></span>
+								</div>
+								<div class="form-group">
+									<label asp-for="Stock" class="control-label"></label>
+									<input asp-for="Stock" class="form-control" />
+									<span asp-validation-for="Stock" class="text-danger"></span>
+								</div>
+								<div class="form-group">
+									<label asp-for="ProductPrice" class="control-label"></label>
+									<input asp-for="ProductPrice" class="form-control" />
+									<span asp-validation-for="ProductPrice" class="text-danger"></span>
+								</div>
+								<div class="form-group">
+									<label asp-for="ProductSalePrice" class="control-label"></label>
+									<input asp-for="ProductSalePrice" class="form-control" />
+									<span asp-validation-for="ProductSalePrice" class="text-danger"></span>
+								</div>
+								<div class="form-group">
+									<label asp-for="Origin" class="control-label"></label>
+									<input asp-for="Origin" class="form-control" />
+									<span asp-validation-for="Origin" class="text-danger"></span>
+								</div>
+								<div class="form-group">
+									<label asp-for="ProductImage" class="control-label"></label>
+									<div class="form-group">
+										<img src="@(_config[Constants.BASE_ADDRESS] + Model.UrlImage)" height="200" width="200" id="previewImg" />
+									</div>
+									<input asp-for="ProductImage" class="form-control" type="file" onchange="ChangeImage(this, document.getElementById('previewImg'))" />
+									<span asp-validation-for="ProductImage" class="text-danger"></span>
+								</div>
+								<div class="form-group">
+									<input type="submit" value="Cập nhật" class="btn btn-primary" />
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+
+<div>
+	<a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+	@{
+		await Html.RenderPartialAsync("_ValidationScriptsPartial");
+	}
+
+	<script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script>
+	<script type="text/javascript">
+		ClassicEditor
+			.create(document.querySelector('#pIEditor'), {
+				//plugins: [Essentials, Paragraph, Bold, Italic, Alignment],     // <--- MODIFIED
+				//toolbar: ['bold', 'italic', 'alignment']                       // <--- MODIFIED
+				height: 220
+			})
+			.then(editor => {
+				console.log('Editor was initialized', editor);
+			})
+			.catch(error => {
+				console.error(error.stack);
+			});
+		ClassicEditor
+			.create(document.querySelector('#pDEditor'), {
+				//plugins: [Essentials, Paragraph, Bold, Italic, Alignment],     // <--- MODIFIED
+				//toolbar: ['bold', 'italic', 'alignment']                       // <--- MODIFIED
+				height: 220
+			})
+			.then(editor => {
+				console.log('Editor was initialized', editor);
+			})
+			.catch(error => {
+				console.error(error.stack);
+			});
+	</script>
+	<script>
+		function ChangeImage(UploadImage, previewImg) {
+			if (UploadImage.files && UploadImage.files[0]) {
+				var reader = new FileReader();
+				reader.onload = function (e) {
+					$(previewImg).attr('src', e.target.result);
+				}
+				reader.readAsDataURL(UploadImage.files[0]);
+			}
+		}
+	</script>
+}
